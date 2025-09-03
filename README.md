@@ -27,5 +27,6 @@ The GNU screen session can be controlled through shortcuts of the form `Ctrl+a <
 * `Ctrl+a p` - switch to the previous window
 * `Ctrl+a Esc` - enter [copy/scrollback mode](https://www.gnu.org/software/screen/manual/html_node/Copy.html), allowing to scroll through past outputs; press `q` to exit
 * `Ctrl+a :<command>` - execute `<command>` in the host environment, e.g. enter `Ctrl+a :screen bash` to create a window in the host's (as opposed to the container's) context
+* `Ctrl+a d` - detach from current session, run `./scripts/docker/connect.sh` to reconnect
 
 See the [GNU screen documentation](https://www.gnu.org/software/screen/manual/html_node/index.html) for more information. To close windows, simply enter `exit` to terminate the shell session; when all sessions are closed, the container is automatically stopped.
