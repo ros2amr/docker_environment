@@ -17,7 +17,7 @@
 # Author: Helio Perroni Filho
 
 # Base image for the OS, update as convenient.
-FROM ubuntu:24.04
+FROM ubuntu:22.04
 
 USER root
 WORKDIR /
@@ -67,7 +67,10 @@ RUN apt update && apt install -y \
   python3-pip \
   python3-venv \
   ros-dev-tools \
-  ros-jazzy-desktop
+  ros-humble-desktop \
+  ros-humble-rqt-robot-steering \
+  ros-humble-turtlesim \
+  ros-humble-urdf-tutorial
 
 # Create ordinary user with passwordless sudo permission.
 RUN <<EOF

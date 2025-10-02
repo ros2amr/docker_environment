@@ -70,7 +70,7 @@ fi
 export PATH="$PATH:$HOME/.local/bin"
 
 # Source the ROS environment.
-source /opt/ros/jazzy/setup.bash
+source /opt/ros/humble/setup.bash
 
 # Activate the Python virtual environment.
 source $HOME/ros2/bin/activate
