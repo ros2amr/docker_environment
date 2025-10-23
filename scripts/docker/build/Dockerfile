@@ -67,8 +67,11 @@ RUN apt update && apt install -y \
   python3-pip \
   python3-venv \
   ros-dev-tools \
-  ros-humble-desktop \
+  ros-humble-desktop-full \
+  ros-humble-gazebo-ros \
+  ros-humble-gazebo-plugins \
   ros-humble-rqt-robot-steering \
+  ros-humble-rqt-tf-tree \
   ros-humble-turtlesim \
   ros-humble-urdf-tutorial
 
